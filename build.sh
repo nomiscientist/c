@@ -1,2 +1,2 @@
-gcc -o test test.c
-./test
+gcc -o main main.c support.c
+./main
