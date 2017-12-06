@@ -1,9 +1,9 @@
-#include <stdio.h>
+// #include <stdio.h>
 
-extern int counter;
+// extern int counter;
 
-void write_extern(void)
-{
-    counter++;
-    printf("counter: %d\n",counter);
-}
+// void write_extern(void)
+// {
+//     counter++;
+//     printf("counter: %d\n",counter);
+// }

@@ -1,2 +1,2 @@
-gcc -o main main.c support.c
+gcc -o main main.c
 ./main
