@@ -31,51 +31,117 @@
 
 int main()
 {
+    //DECISION MAKING
+    int a;
+    int b;
+    printf("ENter Number a: ");
+    scanf("%d",&a);
+    printf("ENter Number b: ");
+    scanf("%d",&b);
+
+
+    switch(a)
+    {
+        case 20:
+        {
+            printf("case 20\n");
+            switch(b)
+            {
+                case -10:
+                {
+                    printf("case -10\n");
+                    break;
+                }
+                case -20:
+                {
+                    printf("case -20\n");
+                    break;
+                }
+            }
+            break;
+        }
+        case 10:
+        {
+            printf("case 10\n");
+            break;
+        }
+        default:
+        {
+            printf("Default\n");
+            break;
+        }
+
+    }
+
+
+
+
+
+    // fgets()
+    if (a < b)
+    {
+        printf("a < 10\n");
+    }
+    else if (a >= 20)
+    {
+        printf("a >= 20\n");
+
+    }
+    else
+    {
+        printf("a>10\n");
+    }
+
+
+
+
+
+
     // OPERATORS
 
-    int left_value = 2;
-    int right_value = 3;
-    int arthimetic_output;
+    // int left_value = 2;
+    // int right_value = 3;
+    // int arthimetic_output;
 
-    arthimetic_output = left_value + right_value;
-    printf("arthimetic_output: %d\n",arthimetic_output);
+    // arthimetic_output = left_value + right_value;
+    // printf("arthimetic_output: %d\n",arthimetic_output);
 
-    unsigned int a = 60; // 0011 1100
-    unsigned int b = 13; // 0000 1101
+    // unsigned int a = 60; // 0011 1100
+    // unsigned int b = 13; // 0000 1101
 
-    unsigned int c;
-    c = a & b;
-    printf("a&b: %d\n",c);
+    // unsigned int c;
+    // c = a & b;
+    // printf("a&b: %d\n",c);
 
-    c = a | b;
-    printf("a|b: %d\n",c);
+    // c = a | b;
+    // printf("a|b: %d\n",c);
 
-    c = a ^ b;
-    printf("a|b: %d\n",c);
+    // c = a ^ b;
+    // printf("a|b: %d\n",c);
     
-    a |= b;
-    printf("a|=b: %d\n",a);
+    // a |= b;
+    // printf("a|=b: %d\n",a);
 
-    c = ~a;
-    printf("~a: %d\n",c);
+    // c = ~a;
+    // printf("~a: %d\n",c);
 
-    c = a << 2;
-    printf("a << 2: %d\n",c);
+    // c = a << 2;
+    // printf("a << 2: %d\n",c);
 
-    c = a >> 2;
-    printf("a>>2: %d\n",c);
+    // c = a >> 2;
+    // printf("a>>2: %d\n",c);
 
-    int a =42;
-    printf("Sizeof(a): %ld \n", sizeof(a));
+    // int a =42;
+    // printf("Sizeof(a): %ld \n", sizeof(a));
 
-    int* ptr;
+    // int* ptr;
 
-    ptr = &a;
-    printf("ptr=&a %d &%d \n",*ptr,a);
+    // ptr = &a;
+    // printf("ptr=&a %d &%d \n",*ptr,a);
 
-    int b;
-    b = (a<50)?52:0;
-    printf("Value of b: %d\n",b); 
+    // int b;
+    // b = (a<50)?52:0;
+    // printf("Value of b: %d\n",b); 
 
 
 
