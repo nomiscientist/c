@@ -7,6 +7,7 @@
 //objdump -S --disassemble helloworld > helloworld.dump
 
 #include <stdio.h>
+#include <string.h>
 // #include <float.h>
 
 // variable declaration
@@ -31,66 +32,151 @@
 
 int main()
 {
+
+    //LOOPS
+
+
+    for (int i=0;i<10;i++)
+    {
+        if(i==5)
+        {
+            i++;
+            goto GOTO;
+        }
+        printf("i:%d\n",i);
+        
+        
+    }
+
+    GOTO:printf("NONE\n");
+
+
+    // int j=0;  
+    // int i=0;
+
+    // for (i=2;i<100;i++) // i=2,3,4,5
+    // {
+    //     for (j=2;j<=(i/j);j++) // j=2,3
+    //     {
+    //         if(!(i%j))
+    //         {
+    //             break;
+    //         }
+    //     }        
+    //     if(j>(i/j)) 
+    //     {
+    //         printf("%d is prime\n",i);
+    //     }
+
+    // }
+
+
+
+
+    // for(int i=0; i<=10;i++)
+    // {
+    //     for(int j=0;j<=3;j++)
+    //     {
+    //         printf("i=%d and j=%d\n",i,j);
+    //     }
+    // }
+
+
+
+
+    // char str[]="MFaisal";
+    // // printf("%s\n",str);
+    // // printf("Enter your name? ");
+    // // scanf("%s",str);
+
+    // do
+    // {
+    //     printf("Enter your name? ");
+    //     scanf("%s",str);
+
+    // }while(strcmp(str,"mfaisal")==0);
+
+    // str="MFaisal";
+
+    
+    
+    
+    // int a = 10;
+    // int i=0;
+
+    // for (i=0; i<10;i++)
+    // {
+    //     printf("i: %d\n",i);
+    // }
+
+
+
+
+    // while(a>5)
+    // {   
+    //     printf("a: %d\n",a);
+    //     a--;
+        
+    // }
+
+
+
     //DECISION MAKING
-    int a;
-    int b;
-    printf("ENter Number a: ");
-    scanf("%d",&a);
-    printf("ENter Number b: ");
-    scanf("%d",&b);
+    // int a;
+    // int b;
+    // printf("ENter Number a: ");
+    // scanf("%d",&a);
+    // printf("ENter Number b: ");
+    // scanf("%d",&b);
 
 
-    switch(a)
-    {
-        case 20:
-        {
-            printf("case 20\n");
-            switch(b)
-            {
-                case -10:
-                {
-                    printf("case -10\n");
-                    break;
-                }
-                case -20:
-                {
-                    printf("case -20\n");
-                    break;
-                }
-            }
-            break;
-        }
-        case 10:
-        {
-            printf("case 10\n");
-            break;
-        }
-        default:
-        {
-            printf("Default\n");
-            break;
-        }
+    // switch(a)
+    // {
+    //     case 20:
+    //     {
+    //         printf("case 20\n");
+    //         switch(b)
+    //         {
+    //             case -10:
+    //             {
+    //                 printf("case -10\n");
+    //                 break;
+    //             }
+    //             case -20:
+    //             {
+    //                 printf("case -20\n");
+    //                 break;
+    //             }
+    //         }
+    //         break;
+    //     }
+    //     case 10:
+    //     {
+    //         printf("case 10\n");
+    //         break;
+    //     }
+    //     default:
+    //     {
+    //         printf("Default\n");
+    //         break;
+    //     }
 
-    }
+    // }
 
+    // // fgets()
+    // if (a < b)
+    // {
+    //     printf("a < 10\n");
+    // }
+    // else if (a >= 20)
+    // {
+    //     printf("a >= 20\n");
 
-
-
-
-    // fgets()
-    if (a < b)
-    {
-        printf("a < 10\n");
-    }
-    else if (a >= 20)
-    {
-        printf("a >= 20\n");
-
-    }
-    else
-    {
-        printf("a>10\n");
-    }
+    // }
+    // else
+    // {
+    //     printf("a>10\n");
+    // }
 
 
 
