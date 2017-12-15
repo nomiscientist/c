@@ -29,26 +29,70 @@
 // #define NUM 007
 // #define NEWLINE '\n'
 
+int max_num(int,int);
+
+void swap_method(int,int);
+
+void swap_by_reference(int *x,int *y);
+
 
 int main()
 {
+    //Functions
+
+    int x=3, y=2;
+
+    printf("Before x: %d, y: %d\n", x,y);
+    swap_by_reference(&x,&y);
+    printf("After  x: %d, y: %d\n", x,y);
+
+
+
+
+    // int a=12, b=13;
+    // printf("Before a: %d, b: %d\n",a,b);
+    
+    // swap_method(a,b);
+
+    // printf("After a: %d, b: %d\n",a,b);
+
+
+
+    // int num1=5,num2=10;
+
+    // // int r = |num1-num2|;
+    // // printf("r:%d\n",r);
+
+
+    // printf("Enter Num1: ");
+    // scanf("%d",&num1);
+
+    // printf("\nEnter num2: ");
+    // scanf("%d",&num2);
+
+    // printf("result: %d\n",Add(num1,num2));
+
+
+
+
+
 
     //LOOPS
 
 
-    for (int i=0;i<10;i++)
-    {
-        if(i==5)
-        {
-            i++;
-            goto GOTO;
-        }
-        printf("i:%d\n",i);
+    // for (int i=0;i<10;i++)
+    // {
+    //     if(i==5)
+    //     {
+    //         i++;
+    //         goto GOTO;
+    //     }
+    //     printf("i:%d\n",i);
         
         
-    }
+    // }
 
-    GOTO:printf("NONE\n");
+    // GOTO:printf("NONE\n");
 
 
     // int j=0;  
@@ -285,6 +329,82 @@ int main()
     // Constants and literals
 
     return 0;
+}
+
+
+void swap_by_reference(int *x,int *y)
+{
+    // printf("x: %ls, y: %ls\n",x,y);
+    int temp;
+    temp = *x;
+    *x = *y;
+    *y = temp;
+    // printf("x: %ls, y: %ls\n",x,y);
+}
+
+void swap_method(int a,int b)
+{
+    printf("a: %d, b: %d\n",a,b);
+    int temp;
+    temp = a;
+    a = b;
+    b = temp;
+    printf("a: %d, b: %d\n",a,b);
+
+}
+
+int Add(int x, int y)
+{
+    // Iterate till there is no carry  
+    while (y != 0)
+    {
+        // carry now contains common set bits of x and y
+        int carry = x & y;  
+ 
+        // Sum of bits of x and y where at least one of the bits is not set
+        x = x ^ y; 
+ 
+        // Carry is shifted by one so that adding it to x gives the required sum
+        y = carry << 1;
+    }
+    return x;
+}
+
+
+int max_num(int num1,int num2)
+{
+    int result;
+    if(num1<num2)
+    {
+        result = num2;
+    }
+    else
+    {
+        result = num1;
+    }
+    return result;
+
+}
+
+int getMax(int a, int b){
+    return (a+b+((a-b)>>sizeof(int)*8-1|1)*(a-b))/2;
+}
+
+int get_max(int a, int b) {
+    int c = a - b;
+    printf("c: %d\n",c);
+
+    int k = (c >> 31) & 0x1;
+    printf("c>>31: %d\n",(c >> 31));
+    printf("k: %d\n",k);
+    int max = a - k * c;
+    printf("max: %d\n",max);
+    return max;
+}
+
+int get_max_with_oneline(int a,int b)
+{
+    return (a-((a-b)>>sizeof(int)&1)*(a-b));
 }
 
 
