@@ -34,17 +34,18 @@
 // void swap_method(int,int);
 
 // void swap_by_reference(int *x,int *y);
+//int max_num(int,int);
+//
+//void swap_method(int,int);
+//
+//void swap_by_reference(int *x,int *y);
 
 
 int main()
 {
-
-    //SCOPE RULES
     
 
-
-
-
+    //SCOPE RULES
 
     //Functions
 
