@@ -7,7 +7,7 @@
 //objdump -S --disassemble helloworld > helloworld.dump
 
 #include <stdio.h>
-#include <string.h>
+//#include <string.h>
 // #include <float.h>
 
 // variable declaration
@@ -40,9 +40,22 @@
 //
 //void swap_by_reference(int *x,int *y);
 
+#define GETARRAYSIZE(array_name) (sizeof(array_name)/sizeof(array_name[0]))
+
 
 int main()
 {
+	//ARRAYS
+
+	int test[5];
+	double balance[] = { 1.0, 2.0, 3.0, 5.2 };
+
+
+	for (int i = 0; i < GETARRAYSIZE(balance); i++)
+	{
+		printf("balance[%d]= %f\n", i, balance[i]);
+	}
+
     
 
     //SCOPE RULES
