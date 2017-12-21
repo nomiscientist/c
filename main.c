@@ -47,14 +47,35 @@ int main()
 {
 	//ARRAYS
 
-	int test[5];
+	//int twoDArray[3][3];
+	/*int twoDArray[3][3] = { { 0, 1, 2 },
+				  {3,4,5},
+				  {6,7,8}
+	};
+
+	int array2D[3][3] = { 0, 1, 2, 3, 4, 5, 6, 7, 8};
+
+	for (int i = 0; i < GETARRAYSIZE(twoDArray); i++)
+	{
+		for (int j = 0; j < GETARRAYSIZE(twoDArray[0]); j++)
+		{
+			printf(" %d ", twoDArray[i][j]);
+
+		}
+		printf("\n");
+	}
+
+	printf("%d \n", sizeof(*array2D));*/
+
+
+	/*int test[5];
 	double balance[] = { 1.0, 2.0, 3.0, 5.2 };
 
 
 	for (int i = 0; i < GETARRAYSIZE(balance); i++)
 	{
 		printf("balance[%d]= %f\n", i, balance[i]);
-	}
+	}*/
 
     
 
