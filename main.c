@@ -42,10 +42,31 @@
 
 #define GETARRAYSIZE(array_name) (sizeof(array_name)/sizeof(array_name[0]))
 
+// void array_as_arg1(int *array1);
+// int get_array_size(int array[]);
+
+int * get_random_numbers(int numbers);
+
 
 int main()
 {
 	//ARRAYS
+
+    
+    int *p = get_random_numbers(10);
+    for(int i=0;i<10;i++)
+    {
+        printf("*p , %d : %d\n",i,*(p+i));
+    }
+
+    // int array1[]={1,2,5,6,7,8};
+    // array_as_arg1(array1);
+    // int sizeN = sizeof(array1);
+    // printf("%d\n",sizeN);
+    // int sizeD = sizeof(array1[0]);
+    // printf("%d\n",sizeD);
+    // double output=sizeN/sizeD;
+    // printf("%f\n",output);
     
 
 
@@ -376,6 +397,38 @@ int main()
 
     return 0;
 }
+
+int * get_random_numbers(int numbers)
+{
+    static int random_numbers[10];
+    srand((unsigned)time(NULL));
+
+    for(int i=0;i<10;++i)
+    {
+        random_numbers[i]=rand();
+        printf("random_number[%d]= %d\n",i,*(random_numbers+i));
+    }
+    return random_numbers;
+}
+
+// int get_array_size(int array[])
+// {
+//     int sizeN = sizeof(array);
+//     printf("%d\n",sizeN);
+//     int sizeD = sizeof(array[0]);
+//     printf("%d\n",sizeD);
+//     int output = (sizeof(array)/sizeof(array[0]));
+//     return output;
+// }
+
+// void array_as_arg1(int *array1)
+// {
+//     int array_size=get_array_size(array1);
+//     for(int i=0;i<array_size;i++)
+//     {
+//         printf("array[%d]=%d\n",i,array1[i]);
+//     }
+// }
 
 
 // void swap_by_reference(int *x,int *y)
