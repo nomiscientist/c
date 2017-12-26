@@ -45,19 +45,38 @@
 // void array_as_arg1(int *array1);
 // int get_array_size(int array[]);
 
-int * get_random_numbers(int numbers);
+// int * get_random_numbers(int numbers);
 
 
 int main()
 {
+    //POINTERS
+
+    // float f = 9.99;
+    
+    // float *fp=NULL;
+    // printf("address fp:%x\n",fp);
+    
+    // fp = &f;
+
+    // printf("address fp:%x\n",fp);
+    // printf("address &f: %x\n",&f);
+
+    // printf("value f:%f\n",*fp);
+
+    // int a=10;
+    // printf("%x\n",&a);
+
+
+
 	//ARRAYS
 
     
-    int *p = get_random_numbers(10);
-    for(int i=0;i<10;i++)
-    {
-        printf("*p , %d : %d\n",i,*(p+i));
-    }
+    // int *p = get_random_numbers(10);
+    // for(int i=0;i<10;i++)
+    // {
+    //     printf("*p , %d : %d\n",i,*(p+i));
+    // }
 
     // int array1[]={1,2,5,6,7,8};
     // array_as_arg1(array1);
@@ -398,18 +417,18 @@ int main()
     return 0;
 }
 
-int * get_random_numbers(int numbers)
-{
-    static int random_numbers[10];
-    srand((unsigned)time(NULL));
+// int * get_random_numbers(int numbers)
+// {
+//     static int random_numbers[10];
+//     srand((unsigned)time(NULL));
 
-    for(int i=0;i<10;++i)
-    {
-        random_numbers[i]=rand();
-        printf("random_number[%d]= %d\n",i,*(random_numbers+i));
-    }
-    return random_numbers;
-}
+//     for(int i=0;i<10;++i)
+//     {
+//         random_numbers[i]=rand();
+//         printf("random_number[%d]= %d\n",i,*(random_numbers+i));
+//     }
+//     return random_numbers;
+// }
 
 // int get_array_size(int array[])
 // {
