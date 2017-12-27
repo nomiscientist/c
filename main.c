@@ -47,10 +47,30 @@
 
 // int * get_random_numbers(int numbers);
 
+void get_pointer_parameter(int *pointer);
 
 int main()
 {
     //POINTERS
+
+    int roll_number=31222;
+    printf("before: %d\n",roll_number);
+    get_pointer_parameter(&roll_number);
+    printf("after: %d\n",roll_number);
+
+
+
+    // int value=20;
+    // int *ptr=NULL;
+    // int **pptr=NULL;
+
+    // ptr=&value;
+    // pptr=&ptr;
+
+    // printf("address value: %d\n",&value);
+    // printf("address ptr: %d\n",ptr);
+    // printf("address pptr: %d\n", pptr);
+    // printf("value pptr --> ptr --> value : %d\n", **pptr);
 
 	/*char *name[] = { "MFAISAL", "ALI", "AMAD" };
 
@@ -470,6 +490,14 @@ int main()
     // Constants and literals
 
     return 0;
+}
+
+void get_pointer_parameter(int *pointer)
+{
+    int value = *pointer;
+    printf("%d\n",value);
+    value++;
+    *pointer=value;
 }
 
 // int * get_random_numbers(int numbers)
