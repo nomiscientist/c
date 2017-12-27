@@ -52,6 +52,61 @@ int main()
 {
     //POINTERS
 
+	/*char *name[] = { "MFAISAL", "ALI", "AMAD" };
+
+	int size = GETARRAYSIZE(name);
+
+	for (int i = 0; i <size ; i++)
+	{
+		printf("address ptr[%d]: %s\n", i, name[i]);
+		printf("value *ptr[%d]: %s\n", i, *name);
+
+	}*/
+
+	/*int test_array[] = { 1, 2, 3, 4, 5, 6 };
+	const int size = GETARRAYSIZE(test_array);
+	int *ptr[6];
+
+	for (int i = 0; i < size; i++)
+	{
+		ptr[i] = &test_array[i];
+	}
+
+	for (int i = 0; i < size; i++)
+	{
+		printf("address ptr[%d]: %d\n", i,ptr[i]);
+		printf("value *ptr[%d]: %d\n", i, *ptr[i]);
+
+	}*/
+
+
+
+
+
+	/*int test_array[] = { 1, 2, 3, 4, 5, 6 };
+	int *ptr=NULL;
+
+	ptr = test_array;
+
+	int size = GETARRAYSIZE(test_array);
+
+	while (ptr<&test_array[size])
+	{
+		printf("address ptr: %d\n", ptr);
+		printf("value *ptr: %d \n", *ptr);
+		*ptr++;
+
+	}*/
+
+
+	//for (int i = GETARRAYSIZE(test_array)-1; i >= 0; i--)
+	//{
+	//	printf("address ptr:%x\n", ptr);
+	//	printf("value *ptr, i: %d, %d \n", *ptr, i);
+	//	*ptr--;
+	//}
+
+
     // float f = 9.99;
     
     // float *fp=NULL;
