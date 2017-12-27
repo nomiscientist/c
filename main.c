@@ -47,16 +47,40 @@
 
 // int * get_random_numbers(int numbers);
 
-void get_pointer_parameter(int *pointer);
+// void get_pointer_parameter(int *pointer);
 
 int main()
 {
+    //STRINGS
+    char string[]="mfaisal";
+    char str2[10];
+    printf("%s and %d\n",string,GETARRAYSIZE(string));
+
+    printf("%d\n",strlen(string));
+    strcpy(str2,string);
+    printf("%s\n",str2);
+    // strcat(str2,string);   
+    // printf("%s\n",str2);
+    // printf("%d\n",strcmp(string,str2));
+    printf("%d\n",strchr(string,'f'));
+    int *ptr = strchr(string,'f');
+    printf("%d\n",*ptr);
+
+    printf("%d\n",strstr(string,"fa"));
+    int *ptr2 = strstr(string,"fa");
+    printf("%d\n",*ptr2);
+
+
+
+
+
+
     //POINTERS
 
-    int roll_number=31222;
-    printf("before: %d\n",roll_number);
-    get_pointer_parameter(&roll_number);
-    printf("after: %d\n",roll_number);
+    // int roll_number=31222;
+    // printf("before: %d\n",roll_number);
+    // get_pointer_parameter(&roll_number);
+    // printf("after: %d\n",roll_number);
 
 
 
@@ -492,13 +516,13 @@ int main()
     return 0;
 }
 
-void get_pointer_parameter(int *pointer)
-{
-    int value = *pointer;
-    printf("%d\n",value);
-    value++;
-    *pointer=value;
-}
+// void get_pointer_parameter(int *pointer)
+// {
+//     int value = *pointer;
+//     printf("%d\n",value);
+//     value++;
+//     *pointer=value;
+// }
 
 // int * get_random_numbers(int numbers)
 // {
