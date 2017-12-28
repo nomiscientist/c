@@ -5,9 +5,10 @@
 //gcc -S helloworld.c
 //gcc -S -o my_asm_output.s helloworld.c
 //objdump -S --disassemble helloworld > helloworld.dump
+#include "tutorial.h"
 
 #include <stdio.h>
-//#include <string.h>
+#include <string.h>
 // #include <float.h>
 
 // variable declaration
@@ -40,7 +41,6 @@
 //
 //void swap_by_reference(int *x,int *y);
 
-#define GETARRAYSIZE(array_name) (sizeof(array_name)/sizeof(array_name[0]))
 
 // void array_as_arg1(int *array1);
 // int get_array_size(int array[]);
@@ -49,11 +49,26 @@
 
 // void get_pointer_parameter(int *pointer);
 
+
 int main()
 {
 
 	//STRUCTURES
 
+    struct packed_struct s;
+    s.flaged_integer = 12;
+    printf("flaged integer: %d\n",s.flaged_integer);
+
+
+
+
+    // struct Student s1;
+    // strcpy(s1.name,"mfaisal");
+    // // s1.name="mfaisal";
+    // strcpy(s1.father_name,"faqirhussain");
+    // s1.roll_number=25;
+
+    // print_struct(&s1);
 
 
     //STRINGS
@@ -525,6 +540,13 @@ int main()
 
     return 0;
 }
+
+// void print_struct(struct Student *s)
+// {
+//     printf("name: %s\n",s->name);
+//     printf("father name: %s\n",s->father_name);
+//     printf("roll number: %d\n",s->roll_number);
+// }
 
 // void get_pointer_parameter(int *pointer)
 // {
