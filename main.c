@@ -51,37 +51,38 @@
 
 int main()
 {
+
+	//STRUCTURES
+
+
+
     //STRINGS
-    char string[]="mfaisal";
-    char str2[10];
-    printf("%s and %d\n",string,GETARRAYSIZE(string));
+ //   char string[]="mfaisal";
+ //   char str2[10];
+ //   printf("%s and %d\n",string,GETARRAYSIZE(string));
 
-    printf("%d\n",strlen(string));
-    strcpy(str2,string);
-    printf("%s\n",str2);
-     strcat(str2,string);   
-     printf("%s\n",str2);
-     printf("%d\n",strcmp(string,str2));
-    printf("%d\n",strchr(string,'f'));
-    char *ptr = strchr(string,'f');
-	int index = 0;
-	index = ptr - string;
-	printf("string: %s\n", string);
-    printf("ptr: %c\n",*ptr);
-	printf("index: %d\n", index);
+ //   printf("%d\n",strlen(string));
+ //   strcpy(str2,string);
+ //   printf("%s\n",str2);
+ //    strcat(str2,string);   
+ //    printf("%s\n",str2);
+ //    printf("%d\n",strcmp(string,str2));
+ //   printf("%d\n",strchr(string,'f'));
+ //   char *ptr = strchr(string,'f');
+	//int index = 0;
+	//index = ptr - string;
+	//printf("string: %s\n", string);
+ //   printf("ptr: %c\n",*ptr);
+	//printf("index: %d\n", index);
 
-	
-    printf("%d\n",strstr(string,"fa"));
-	int index = 0;
-    char *ptr2 = strstr(string,"mf");
-	index = ptr2 - string;
-	printf("string: %s\n", string);
-    printf("ptr2: %c \n",*ptr2);
-	printf("index: %d\n", index);
-
-
-
-
+	//
+ //   printf("%d\n",strstr(string,"fa"));
+	//int index = 0;
+ //   char *ptr2 = strstr(string,"mf");
+	//index = ptr2 - string;
+	//printf("string: %s\n", string);
+ //   printf("ptr2: %c \n",*ptr2);
+	//printf("index: %d\n", index);
 
 
     //POINTERS
