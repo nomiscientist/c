@@ -59,16 +59,25 @@ int main()
     printf("%d\n",strlen(string));
     strcpy(str2,string);
     printf("%s\n",str2);
-    // strcat(str2,string);   
-    // printf("%s\n",str2);
-    // printf("%d\n",strcmp(string,str2));
+     strcat(str2,string);   
+     printf("%s\n",str2);
+     printf("%d\n",strcmp(string,str2));
     printf("%d\n",strchr(string,'f'));
-    int *ptr = strchr(string,'f');
-    printf("%d\n",*ptr);
+    char *ptr = strchr(string,'f');
+	int index = 0;
+	index = ptr - string;
+	printf("string: %s\n", string);
+    printf("ptr: %c\n",*ptr);
+	printf("index: %d\n", index);
 
+	
     printf("%d\n",strstr(string,"fa"));
-    int *ptr2 = strstr(string,"fa");
-    printf("%d\n",*ptr2);
+	int index = 0;
+    char *ptr2 = strstr(string,"mf");
+	index = ptr2 - string;
+	printf("string: %s\n", string);
+    printf("ptr2: %c \n",*ptr2);
+	printf("index: %d\n", index);
 
 
 
