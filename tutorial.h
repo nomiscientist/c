@@ -11,7 +11,15 @@
 
 #define GETARRAYSIZE(array_name) (sizeof(array_name)/sizeof(array_name[0]))
 
-struct packed_struct
+union Data
 {
-    int flaged_integer:4;
+    int test_i;
+    char *str;
 };
+
+
+
+// struct packed_struct
+// {
+//     unsigned int flaged_integer:8;
+// };

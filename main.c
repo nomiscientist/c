@@ -52,15 +52,26 @@
 
 int main()
 {
+    // UNIONS
+    int *t;
+    t = 5;
+    printf("%d\n",t);
+
+
+    union Data data;
+    data.test_i=25;
+    data.str="mfaisal";
+    printf("sizeof: %ld\n",sizeof(data));
+    printf("data.test_i: %d\n",data.test_i);
+    printf("data.str: %s\n",data.str);
+
 
 	//STRUCTURES
 
-    struct packed_struct s;
-    s.flaged_integer = 12;
-    printf("flaged integer: %d\n",s.flaged_integer);
-
-
-
+    // struct packed_struct s;
+    // s.flaged_integer = 22;
+    // printf("flaged integer: %d\n",s.flaged_integer);
+    // printf("sizeof: %ld\n",sizeof(s));
 
     // struct Student s1;
     // strcpy(s1.name,"mfaisal");
