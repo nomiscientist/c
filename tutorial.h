@@ -11,11 +11,25 @@
 
 #define GETARRAYSIZE(array_name) (sizeof(array_name)/sizeof(array_name[0]))
 
-union Data
+struct
 {
-    int test_i;
-    char *str;
-};
+    int yes;
+    int no;
+}not_bit_optimized;
+
+struct
+{
+    int yes:1;
+    int no:1;
+}bit_optimized;
+
+
+
+// union Data
+// {
+//     int test_i;
+//     char *str;
+// };
 
 
 
