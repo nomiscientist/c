@@ -52,12 +52,26 @@
 
 int main()
 {
+    // INUTANDOUTPUT
+
+    printf("enter your secret character: ");
+    // int c=getchar();
+    char name[10];
+    scanf("%s",name);
+    // gets(name);
+
+    printf("you entered: %s\n", name);
+    // putchar(c);
+    // puts(name);
+    // printf("\n");   
+
+
     // TYPEDEF
 
-    STRING name ="mfaisal";
-    printf("sizeof: %ld\n",sizeof(STRING));
-    printf("name: %s\n",name);
-    printf("AUTHOR: %s\n",AUTHOR);
+    // STRING name ="mfaisal";
+    // printf("sizeof: %ld\n",sizeof(STRING));
+    // printf("name: %s\n",name);
+    // printf("AUTHOR: %s\n",AUTHOR);
 
     // char a[10];
     // printf("sizeof %ld\n",sizeof(a));
