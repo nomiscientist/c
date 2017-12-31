@@ -52,13 +52,24 @@
 
 int main()
 {
+    // TYPEDEF
+
+    STRING name ="mfaisal";
+    printf("sizeof: %ld\n",sizeof(STRING));
+    printf("name: %s\n",name);
+    printf("AUTHOR: %s\n",AUTHOR);
+
+    // char a[10];
+    // printf("sizeof %ld\n",sizeof(a));
+
+
     //BITFIELDS
     
-    struct not_bit_optimized;
-    struct bit_optimized;
+    // struct not_bit_optimized;
+    // struct bit_optimized;
 
-    printf("sizeof not optimized: %ld\n",sizeof(not_bit_optimized));
-    printf("sizeof optimized: %ld\n",sizeof(bit_optimized));
+    // printf("sizeof not optimized: %ld\n",sizeof(not_bit_optimized));
+    // printf("sizeof optimized: %ld\n",sizeof(bit_optimized));
 
 
 

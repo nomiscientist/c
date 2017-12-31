@@ -10,18 +10,22 @@
 
 
 #define GETARRAYSIZE(array_name) (sizeof(array_name)/sizeof(array_name[0]))
+typedef char  *STRING;
+#define AUTHOR "MFAISAL"
 
-struct
-{
-    int yes;
-    int no;
-}not_bit_optimized;
 
-struct
-{
-    int yes:1;
-    int no:1;
-}bit_optimized;
+
+// struct
+// {
+//     int yes;
+//     int no;
+// }not_bit_optimized;
+
+// struct
+// {
+//     int yes:1;
+//     int no:1;
+// }bit_optimized;
 
 
 
