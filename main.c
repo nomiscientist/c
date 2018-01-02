@@ -52,15 +52,19 @@
 
 int main()
 {
+    // FILE I/O
+    
+
+
     // INUTANDOUTPUT
 
-    printf("enter your secret character: ");
+    // printf("enter your secret character: ");
     // int c=getchar();
-    char name[10];
-    scanf("%s",name);
+    // char name[10];
+    // scanf("%s",name);
     // gets(name);
 
-    printf("you entered: %s\n", name);
+    // printf("you entered: %s\n", name);
     // putchar(c);
     // puts(name);
     // printf("\n");   
