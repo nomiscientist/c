@@ -52,18 +52,19 @@
 
 int main()
 {
+
     // UNIONS
-    int *t;
-    t = 5;
-    printf("%d\n",t);
+    //int *t;
+    //t = 5;
+    //printf("%d\n",t);
 
 
-    union Data data;
-    data.test_i=25;
-    data.str="mfaisal";
-    printf("sizeof: %ld\n",sizeof(data));
-    printf("data.test_i: %d\n",data.test_i);
-    printf("data.str: %s\n",data.str);
+    //union Data data;
+    //data.test_i=25;
+    //data.str="mfaisal";
+    //printf("sizeof: %ld\n",sizeof(data));
+    //printf("data.test_i: %d\n",data.test_i);
+    //printf("data.str: %s\n",data.str);
 
 
 	//STRUCTURES
