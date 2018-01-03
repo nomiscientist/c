@@ -52,12 +52,69 @@
 
 int main()
 {
+    // FILE I/O
+    FILE *fp;
+    char buff[255];
 
-    //FILE I/O
+    fp = fopen("tmp/test.txt","r");
+
+    fscanf(fp,"%s",buff);
+    printf("%s\n",buff);
+
+    fgets(buff,255,fp);
+    printf("%s\n",buff);
+
+     fgets(buff,255,fp);
+    printf("%s\n",buff);
+
+    fclose(fp);
+    printf("Done!");
 
     
 
 
+
+    //  FILE *fp;
+    //  fp = fopen("tmp/test.txt","w+");
+    //  fputs("this text by fputs.\n",fp);
+    //  fprintf(fp,"and this text by fprints.\n");
+    //  fclose(fp);
+    //  printf("Done creating and writing file.\n");
+    
+
+
+    // INUTANDOUTPUT
+
+    // printf("enter your secret character: ");
+    // int c=getchar();
+    // char name[10];
+    // scanf("%s",name);
+    // gets(name);
+
+    // printf("you entered: %s\n", name);
+    // putchar(c);
+    // puts(name);
+    // printf("\n");   
+
+
+    // TYPEDEF
+
+    // STRING name ="mfaisal";
+    // printf("sizeof: %ld\n",sizeof(STRING));
+    // printf("name: %s\n",name);
+    // printf("AUTHOR: %s\n",AUTHOR);
+
+    // char a[10];
+    // printf("sizeof %ld\n",sizeof(a));
+
+
+    //BITFIELDS
+    
+    // struct not_bit_optimized;
+    // struct bit_optimized;
+
+    // printf("sizeof not optimized: %ld\n",sizeof(not_bit_optimized));
+    // printf("sizeof optimized: %ld\n",sizeof(bit_optimized));
     // UNIONS
     /*int *t;
     t = 5;

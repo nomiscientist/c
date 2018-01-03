@@ -1,0 +1,2 @@
+this text by fputs.
+and this text by fprints.
