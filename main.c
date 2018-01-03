@@ -53,6 +53,12 @@
 int main()
 {
      // FILE I/O
+     FILE *fp;
+     fp = fopen("tmp/test.txt","w+");
+     fputs("this text by fputs.\n",fp);
+     fprintf(fp,"and this text by fprints.\n");
+     fclose(fp);
+     printf("Done creating and writing file.\n");
     
 
 
