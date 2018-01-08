@@ -14,6 +14,13 @@ typedef char  *STRING;
 #define AUTHOR "MFAISAL"
 
 
+struct Record
+{
+    int value;
+    STRING name;
+};
+
+
 
 // struct
 // {

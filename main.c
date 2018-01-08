@@ -53,26 +53,46 @@
 int main()
 {
     // FILE I/O
-    FILE *fp;
-    char buff[255];
+    FILE *file_ptr;
+    struct Record rec;
 
-    fp = fopen("tmp/test.txt","r");
+    file_ptr = fopen("tmp/test.bin","wb");
+    for(int i=0;i<5;i++)
+    {
+        rec.value = i;
+        rec.name = "mfaisal";
+        fwrite(&rec,sizeof(rec),1,file_ptr);
+    }
+    fclose(file_ptr);
+    printf("Writing Done!\n");
 
-    fscanf(fp,"%s",buff);
-    printf("%s\n",buff);
-
-    fgets(buff,255,fp);
-    printf("%s\n",buff);
-
-     fgets(buff,255,fp);
-    printf("%s\n",buff);
-
-    fclose(fp);
-    printf("Done!");
-
-    
+    file_ptr = fopen("tmp/test.bin","rb");
+    for(int i=0;i<5;i++)
+    {
+        fread(&rec,sizeof(rec),1,file_ptr);
+        printf("%d\n",rec.value);
+        printf("%s\n",rec.name);
+    }
+    fclose(file_ptr);
+    printf("Reading Done!\n");
 
 
+    // FILE *fp;
+    // char buff[255];
+
+    // fp = fopen("tmp/test.txt","r");
+
+    // fscanf(fp,"%s",buff);
+    // printf("%s\n",buff);
+
+    // fgets(buff,255,fp);
+    // printf("%s\n",buff);
+
+    // fgets(buff,255,fp);
+    // printf("%s\n",buff);
+
+    // fclose(fp);
+    // printf("Done!\n");
 
     //  FILE *fp;
     //  fp = fopen("tmp/test.txt","w+");
