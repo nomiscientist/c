@@ -58,10 +58,19 @@
 
 int main()
 {
+    // TYPE CASTING
+    int test_number = 10;
+    char test_ch='f';
+
+    printf("%d\n",test_ch);
+
+    // float test_float;
+    // printf("%d\n",test_number);
+    // test_float = (float)test_number;
+    // printf("%f\n",test_float);
+
     // HEADER FILES
-    printf("PRINT: %s\n",PRINT);
-
-
+    // printf("PRINT: %s\n",PRINT);
     
     // PREPROCESSORS
 
