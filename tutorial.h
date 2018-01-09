@@ -13,12 +13,35 @@
 typedef char  *STRING;
 #define AUTHOR "MFAISAL"
 
+#undef AUTHOR
+#define AUTHOR "MUHAMMAD_FAISAL"
 
-struct Record
-{
-    int value;
-    STRING name;
-};
+#ifndef MESSAGE
+    #define MESSAGE "HELLO PAKISTAN!"
+#endif
+
+#ifdef AUTHOR
+    #define PRINT AUTHOR
+#endif
+
+#define message(a) \
+    printf(#a "\n")  
+
+#define tokenpaster(n) printf("token"#n"=%d\n",token##n)
+
+#if defined(MESSAGE)
+    #define PRINTAGAIN "YES MESSAGE IS DEFINED"
+#endif
+
+#define square(number) (number*number)
+
+
+
+// struct Record
+// {
+//     int value;
+//     STRING name;
+// };
 
 
 

@@ -52,29 +52,46 @@
 
 int main()
 {
+    // PREPROCESSORS
+
+    printf("AUTHOR: %s\n",AUTHOR);
+    printf("MESSAGE: %s\n",MESSAGE);
+    printf("PRINT: %s\n",PRINT);
+    printf("DATE: %s\n",__DATE__);
+    printf("LINE: %d\n",__LINE__);
+
+    message(mfaisal);
+
+    int token3 = 40;
+    tokenpaster(3);
+
+    printf("PRINT AGAIN: %s\n",PRINTAGAIN);
+
+    printf("SQUARE: %d\n",square(3));
+
     // FILE I/O
-    FILE *file_ptr;
-    struct Record rec;
+    // FILE *file_ptr;
+    // struct Record rec;
 
-    file_ptr = fopen("tmp/test.bin","wb");
-    for(int i=0;i<5;i++)
-    {
-        rec.value = i;
-        rec.name = "mfaisal";
-        fwrite(&rec,sizeof(rec),1,file_ptr);
-    }
-    fclose(file_ptr);
-    printf("Writing Done!\n");
+    // file_ptr = fopen("tmp/test.bin","wb");
+    // for(int i=0;i<5;i++)
+    // {
+    //     rec.value = i;
+    //     rec.name = "mfaisal";
+    //     fwrite(&rec,sizeof(rec),1,file_ptr);
+    // }
+    // fclose(file_ptr);
+    // printf("Writing Done!\n");
 
-    file_ptr = fopen("tmp/test.bin","rb");
-    for(int i=0;i<5;i++)
-    {
-        fread(&rec,sizeof(rec),1,file_ptr);
-        printf("%d\n",rec.value);
-        printf("%s\n",rec.name);
-    }
-    fclose(file_ptr);
-    printf("Reading Done!\n");
+    // file_ptr = fopen("tmp/test.bin","rb");
+    // for(int i=0;i<5;i++)
+    // {
+    //     fread(&rec,sizeof(rec),1,file_ptr);
+    //     printf("%d\n",rec.value);
+    //     printf("%s\n",rec.name);
+    // }
+    // fclose(file_ptr);
+    // printf("Reading Done!\n");
 
 
     // FILE *fp;
