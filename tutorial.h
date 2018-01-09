@@ -1,3 +1,16 @@
+// #define WINDOWS 0
+#define LINUX 1
+// #define MACOSX 0
+
+#ifdef WINDOWS
+    #define PRINT "WINDOWS"
+#elif LINUX
+    #define PRINT "LINUX"
+#elif MACOSX
+    #define PRINT "MACOSX"
+#else
+    #define PRINT "OTHER"
+#endif
 // struct Student
 // {
 //     char name[20];
@@ -9,31 +22,31 @@
 // void print_struct(struct Student *s);
 
 
-#define GETARRAYSIZE(array_name) (sizeof(array_name)/sizeof(array_name[0]))
-typedef char  *STRING;
-#define AUTHOR "MFAISAL"
+// #define GETARRAYSIZE(array_name) (sizeof(array_name)/sizeof(array_name[0]))
+// typedef char  *STRING;
+// #define AUTHOR "MFAISAL"
 
-#undef AUTHOR
-#define AUTHOR "MUHAMMAD_FAISAL"
+// #undef AUTHOR
+// #define AUTHOR "MUHAMMAD_FAISAL"
 
-#ifndef MESSAGE
-    #define MESSAGE "HELLO PAKISTAN!"
-#endif
+// #ifndef MESSAGE
+//     #define MESSAGE "HELLO PAKISTAN!"
+// #endif
 
-#ifdef AUTHOR
-    #define PRINT AUTHOR
-#endif
+// #ifdef AUTHOR
+//     #define PRINT AUTHOR
+// #endif
 
-#define message(a) \
-    printf(#a "\n")  
+// #define message(a) \
+//     printf(#a "\n")  
 
-#define tokenpaster(n) printf("token"#n"=%d\n",token##n)
+// #define tokenpaster(n) printf("token"#n"=%d\n",token##n)
 
-#if defined(MESSAGE)
-    #define PRINTAGAIN "YES MESSAGE IS DEFINED"
-#endif
+// #if defined(MESSAGE)
+//     #define PRINTAGAIN "YES MESSAGE IS DEFINED"
+// #endif
 
-#define square(number) (number*number)
+// #define square(number) (number*number)
 
 
 

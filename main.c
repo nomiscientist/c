@@ -5,6 +5,12 @@
 //gcc -S helloworld.c
 //gcc -S -o my_asm_output.s helloworld.c
 //objdump -S --disassemble helloworld > helloworld.dump
+// #define HEADER "tutorial.h"
+
+// #ifndef HEADER
+// #include HEADER
+// #endif
+
 #include "tutorial.h"
 
 #include <stdio.h>
@@ -52,22 +58,27 @@
 
 int main()
 {
+    // HEADER FILES
+    printf("PRINT: %s\n",PRINT);
+
+
+    
     // PREPROCESSORS
 
-    printf("AUTHOR: %s\n",AUTHOR);
-    printf("MESSAGE: %s\n",MESSAGE);
-    printf("PRINT: %s\n",PRINT);
-    printf("DATE: %s\n",__DATE__);
-    printf("LINE: %d\n",__LINE__);
+    // printf("AUTHOR: %s\n",AUTHOR);
+    // printf("MESSAGE: %s\n",MESSAGE);
+    // printf("PRINT: %s\n",PRINT);
+    // printf("DATE: %s\n",__DATE__);
+    // printf("LINE: %d\n",__LINE__);
 
-    message(mfaisal);
+    // message(mfaisal);
 
-    int token3 = 40;
-    tokenpaster(3);
+    // int token3 = 40;
+    // tokenpaster(3);
 
-    printf("PRINT AGAIN: %s\n",PRINTAGAIN);
+    // printf("PRINT AGAIN: %s\n",PRINTAGAIN);
 
-    printf("SQUARE: %d\n",square(3));
+    // printf("SQUARE: %d\n",square(3));
 
     // FILE I/O
     // FILE *file_ptr;
