@@ -15,6 +15,9 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <errno.h>
+
+extern int errno;
 // #include <float.h>
 
 // variable declaration
@@ -57,12 +60,31 @@
 
 
 int main()
-{
-    // TYPE CASTING
-    int test_number = 10;
-    char test_ch='f';
+{   
+    
+    FILE *fp;
+    fp = fopen("unexisted.txt","rb");
+    int errnum = 0;
+    if(fp==NULL)
+    {
+        errnum = errno;
+        fprintf(stderr,"Error number: %d\n",errnum);
+        perror("Error printed by perror\n");
+        fprintf(stderr, "Erro of file: %s\n", strerror(errno));
 
-    printf("%d\n",test_ch);
+    }
+    else
+    {
+        fclose(fp);
+    }
+
+
+
+    // TYPE CASTING
+    // int test_number = 10;
+    // char test_ch='f';
+
+    // printf("%d\n",test_ch);
 
     // float test_float;
     // printf("%d\n",test_number);
